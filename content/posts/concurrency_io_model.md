@@ -41,7 +41,7 @@ draft: false
 
 这是目前 PHP-FPM 和大部分 CGI 脚本(Python、Ruby)所用的模型
 
-![multiple_process_blockingio](http://img.samdlcong.com/multiple_process_blockingio.jpg)
+![multiple_process_blockingio](https://samdlcong.com/multiple_process_blockingio.jpg)
 
 这个模型的缺点是：如果并发量很大的情况下，服务器会来不及处理，会引发 502 
 
@@ -51,7 +51,7 @@ draft: false
 
 这是 Java Web Application所用的模型
 
-![multiple_threads_blocking_io](http://img.samdlcong.com/multiple_threads_blocking_io.jpg)
+![multiple_threads_blocking_io](https://samdlcong.com/multiple_threads_blocking_io.jpg)
 
 线程比进程轻量，并且能在应用间共享内存和状态。
 
@@ -65,7 +65,7 @@ Java 语言支持非阻塞 IO 模型， 但是大多数 Web 服务器都没在�
 
 这是 Node.js 使用的模型
 
-![single_thread_non_blocking_io](http://img.samdlcong.com/single_thread_non_blocking_io.jpg)
+![single_thread_non_blocking_io](https://samdlcong.com/single_thread_non_blocking_io.jpg)
 
 采用的是 Event Loop 的模式，每次发出请求后，会给出回调函数，一旦完成 IO 操作后，就会被执行。底层是将任务放入队列，处理好任务后，会将结果返回给回调函数。
 
@@ -87,7 +87,7 @@ Java 语言支持非阻塞 IO 模型， 但是大多数 Web 服务器都没在�
 
 这是 Java Netty 采用的模型
 
-![thread_pools_non_blocking_io](http://img.samdlcong.com/thread_pools_non_blocking_io.jpg)
+![thread_pools_non_blocking_io](https://samdlcong.com/thread_pools_non_blocking_io.jpg)
 
 Reactor 模式下主程序只负责监听文件描述符上是否有事件发生，并不处理文件描述符的读写。读写由其他的工作程序做。主程序用来抗并发，不阻塞，且非常的轻便，事件可以通过队列的方式等待被工作程序执行。
 
@@ -99,7 +99,7 @@ Reactor 模式下主程序只负责监听文件描述符上是否有事件发生
 
 这是 Go 采用的模型
 
-![multiple_threads_coroutines_non_blocking_io](http://img.samdlcong.com/multiple_threads_coroutines_non_blocking_io.jpg)
+![multiple_threads_coroutines_non_blocking_io](https://samdlcong.com/multiple_threads_coroutines_non_blocking_io.jpg)
 
 Go 原生支持并发，采用轻量级的线程，协程(大小默认 2KB)来处理，并且在程序端来管理这些协程，可以充分利用多核 CPU的性能。是一种非常好的并发解决方案。
 
