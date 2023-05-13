@@ -3,7 +3,7 @@ title: "关于并发和 I/O 模型"
 date: 2023-02-27T13:28:04+08:00
 author: samdlcong
 tags: ["PHP"]
-categories: ["源码阅读"]
+categories: ["技术笔记"]
 draft: false
 ---
 
