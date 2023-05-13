@@ -1,8 +1,8 @@
 ---
-title: "[Tips] Undefined: syscall.Kill on Windows"
+title: "[TIPS] Undefined: syscall.Kill on Windows"
 date: 2023-05-13T16:37:01+08:00
 author: samdlcong
-tags: ["Go","Tips"]
+tags: ["Go","TIPS"]
 categories: ["源码阅读"]
 draft: false
 ---
